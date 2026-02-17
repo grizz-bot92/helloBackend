@@ -23,7 +23,7 @@ const noteSchema = new mongoose.Schema({
 const Note = mongoose.model('Note', noteSchema)
 
 // const note = new Note({
-//     content: "macaroni and cheese", 
+//     content: "macaroni and cheese",
 //     important: true,
 // })
 

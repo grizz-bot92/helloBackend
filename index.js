@@ -22,9 +22,9 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/notes', (request, response) => {
-  Note.find({}).then(notes =>{
+  Note.find({}).then(notes => {
     response.json(notes)
-  })   
+  })
 })
 
 app.get('/api/notes/:id', (request, response, next) => {
@@ -34,7 +34,7 @@ app.get('/api/notes/:id', (request, response, next) => {
         response.json(note)
       } else {
         response.status(404).end()
-      }        
+      }
     })
     .catch(error => next(error))
 })
